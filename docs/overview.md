@@ -6,6 +6,7 @@ The collection is not intended to represent a single product line. Instead, it g
 
 - workflow applications with explicit business actions
 - clean-core side-by-side services
+- standard SAP extensibility and mashup scenarios
 - integration boundaries between SAP source systems and downstream consumers
 - reusable platform services
 - analytical applications that consume staged or transformed business data
@@ -29,6 +30,12 @@ Services that sit between SAP systems and consumers, adding staging, transformat
 - `bulk-uploader`
 - `lap-cap`
 
+### Standard Extensibility
+
+Applications that consume standard SAP APIs, extend standard business objects with local behavior or fields, and expose side-by-side transactional flows through CAP and Fiori Elements.
+
+- `warranty-mgmt`
+
 ### Reusable Platform Services
 
 Cross-domain building blocks that can be consumed by other systems or apps.
@@ -47,6 +54,7 @@ Taken together, the repositories show that SAP CAP can support more than CRUD-ba
 
 - orchestrating business workflows
 - exposing side-by-side services
+- extending standard SAP objects through imported services and local enrichments
 - handling document generation
 - sanitizing inbound data before it reaches core systems
 - staging data for downstream analytical applications

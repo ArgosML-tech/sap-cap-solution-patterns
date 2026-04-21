@@ -10,6 +10,7 @@
 | CAP-MIL | Procurement operations | SAP CAP, Fiori Elements | Urgent procurement lifecycle | Rich end-to-end flow | Longer operational lifecycle handling |
 | CAP PDF Engine | Document services | SAP CAP, docxtemplater | Side-by-side rendering service | Reusable cross-domain capability | Reusable technical services |
 | LAP-CAP | Extraction and handoff | SAP CAP, Fiori Elements | Extract-transform-stage pattern | Clear integration boundary | System boundary and handoff design |
+| Warranty Management | SAP standard extension | SAP CAP, Fiori Elements, imported OData services | Side-by-side standard-object extension | Strong data mashup and draft flow | Standard SAP extensibility patterns |
 | Link Analysis Platform | Investigation and analytics | React, Node.js, Express | Graph-driven analysis workspace | Rich analytical consumption layer | Downstream analytical UI |
 
 ## Functional Grouping
@@ -24,6 +25,10 @@
 
 - [Bulk Uploader](projects/bulk-uploader.md)
 - [LAP-CAP](projects/lap-cap.md)
+
+### Standard SAP Extensibility
+
+- [Warranty Management](projects/warranty-mgmt.md)
 
 ### Reusable Technical Services
 
@@ -47,6 +52,12 @@ If the focus is integration and side-by-side architecture:
 - continue with `lap-cap`
 - then explore `cap-pdf-engine`
 
+If the focus is extending standard SAP objects and imported services:
+
+- start with `warranty-mgmt`
+- continue with `ber-app`
+- then compare with `bulk-uploader`
+
 If the focus is analytics and downstream use of extracted data:
 
 - start with `lap-cap`
@@ -64,6 +75,10 @@ If the focus is analytics and downstream use of extracted data:
 
 - `bulk-uploader` proves a staging-first mass upload pattern that keeps parsing and sanitization outside the core target system.
 - `lap-cap` proves a handoff architecture where extraction and transformation are kept separate from downstream analytics.
+
+### Standard SAP Extensibility
+
+- `warranty-mgmt` proves that CAP can consume standard SAP APIs, enrich standard records with local data, and support draft-enabled business processes around extended objects.
 
 ### Reusable Technical Services
 

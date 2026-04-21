@@ -4,17 +4,18 @@ This collection is best understood not only by project, but also by recurring pa
 
 ## Pattern Matrix
 
-| Pattern | BER App | Bulk Uploader | CAP-EXC | CAP-MIL | CAP PDF Engine | LAP-CAP | Link Analysis Platform |
-|---|---|---|---|---|---|---|---|
-| CDS domain model | Yes | Yes | Yes | Yes | Yes | Yes | Partial |
-| Draft support | Yes | Yes | Yes | Yes | Yes | Partial | No |
-| Explicit workflow state machine | Yes | No | Yes | Yes | No | Partial | No |
-| Role-based authorization | Yes | Partial | Yes | Yes | Yes | Yes | Yes |
-| Audit trail or event log | Partial | Partial | Yes | Yes | No | Partial | Yes |
-| External service or mock integration | Yes | Yes | No | No | No | Yes | Yes |
-| Reusable side-by-side service | No | Yes | No | No | Yes | Yes | No |
-| Fiori Elements UI | Yes | Yes | Yes | Yes | Yes | Yes | No |
-| Downstream analytical consumption | No | No | No | No | No | Yes | Yes |
+| Pattern | BER App | Bulk Uploader | CAP-EXC | CAP-MIL | CAP PDF Engine | LAP-CAP | Warranty Management | Link Analysis Platform |
+|---|---|---|---|---|---|---|---|---|
+| CDS domain model | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Partial |
+| Draft support | Yes | Yes | Yes | Yes | Yes | Partial | Yes | No |
+| Explicit workflow state machine | Yes | No | Yes | Yes | No | Partial | Partial | No |
+| Role-based authorization | Yes | Partial | Yes | Yes | Yes | Yes | Yes | Yes |
+| Audit trail or event log | Partial | Partial | Yes | Yes | No | Partial | Partial | Yes |
+| External service or mock integration | Yes | Yes | No | No | No | Yes | Yes | Yes |
+| Reusable side-by-side service | No | Yes | No | No | Yes | Yes | No | No |
+| Fiori Elements UI | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No |
+| Standard-object extension or mashup | No | No | No | No | No | No | Yes | No |
+| Downstream analytical consumption | No | No | No | No | No | Yes | No | Yes |
 
 ## CDS Domain Modeling
 
@@ -71,6 +72,14 @@ The repositories show different ways of using mocks and staged interfaces to dev
 - mocked OData services for SAP APIs
 - file staging before core-system injection
 - extracted CSV handoff between systems
+
+## Standard-Object Extension and Mashup
+
+The collection also includes the pattern where CAP consumes standard SAP APIs, adds local fields or rules, and exposes an enriched transactional view without modifying the original system.
+
+This is most visible in:
+
+- `warranty-mgmt`
 
 ## Reusable Side-by-Side Services
 

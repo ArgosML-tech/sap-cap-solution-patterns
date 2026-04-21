@@ -24,6 +24,7 @@ The goal of this document is to make those boundaries explicit.
 | CAP-MIL | Urgent procurement lifecycle with traceability and closure | Productive procurement integration, stronger security model, operational metrics, BTP deployment hardening |
 | CAP PDF Engine | Template repository plus side-by-side document rendering | Real PDF conversion pipeline, hardened binary storage, document retention strategy, throughput and security controls |
 | LAP-CAP | Extraction scenario management, CSV staging, handoff to downstream consumer | Real S/4 destination integration, productive storage strategy, stronger app-to-app trust, operational resilience |
+| Warranty Management | Imported standard services, data mashup, draft-enabled contracts, and side-by-side extension around standard objects | Productive destination bindings, enterprise eventing, productive S/4 trust setup, and hardening of external dependency handling |
 | Link Analysis Platform | Graph-first analytical consumption, risk-oriented exploration, staged data import | Production auth model, scale and performance hardening, richer deployment model, stronger integration governance |
 
 ## Common MVP Signals In This Collection
