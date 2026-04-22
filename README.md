@@ -12,16 +12,18 @@ Use this repository as a decision guide, not as a standalone executable product.
 - If you want clean-core integration and boundary patterns, start with `bulk-uploader` or `lap-cap`.
 - If you want side-by-side extensibility on top of standard SAP APIs, start with `warranty-mgmt`.
 - If you want reusable side-by-side services, start with `cap-pdf-engine`.
+- If you want CAP productivity tooling and reusable accelerators, start with `cap-acc`.
 - If you want analytics consuming staged operational data, start with `lap-cap` and then `link-analysis-platform`.
 
 ## Scope
 
-The current collection covers four broad areas:
+The current collection covers six broad areas:
 
 - workflow-centric CAP applications
 - integration and clean-core side-by-side services
 - standard SAP extensibility and data mashup patterns
 - reusable platform services
+- CAP productivity tooling and project accelerators
 - analytical consumption of extracted and operational data
 
 ## Solution Map
@@ -33,6 +35,7 @@ The current collection covers four broad areas:
 | CAP-EXC | Operational exception handling | SAP CAP, Fiori Elements, SQLite | Stateful workflow with audit trail | You want a strong CAP example for governance-heavy workflow and auditability | [ArgosML-tech/cap-exc](https://github.com/ArgosML-tech/cap-exc) |
 | CAP-MIL | Urgent procurement | SAP CAP, Fiori Elements, SQLite | End-to-end urgent case lifecycle | You want a richer operational workflow that continues beyond simple approval | [ArgosML-tech/cap-mil](https://github.com/ArgosML-tech/cap-mil) |
 | CAP PDF Engine | Document generation side-by-side | SAP CAP, docxtemplater, Fiori Elements | Reusable document rendering service | You need a side-by-side document service decoupled from ERP core logic | [ArgosML-tech/cap-pdf-engine](https://github.com/ArgosML-tech/cap-pdf-engine) |
+| CAP Development Accelerator | CAP developer tooling | Node.js, TypeScript, npm workspaces, SAP CAP | Starters, generators, and reusable support packages | You want to standardize and speed up how CAP projects are created and extended | [ArgosML-tech/cap-acc](https://github.com/ArgosML-tech/cap-acc) |
 | LAP-CAP | SAP-to-analytics integration | SAP CAP, Fiori Elements, SQLite | Extract-transform-stage handoff | You need a controlled handoff layer between SAP-like data and analytics | [ArgosML-tech/lap-cap](https://github.com/ArgosML-tech/lap-cap) |
 | Warranty Management | SAP standard extensibility | SAP CAP, Fiori Elements, external OData mocks | Side-by-side warranty extension over products and business partners | You want a CAP reference for imported S/4 services, mashups, draft flows, and standard-object extension | [ArgosML-tech/warranty-mgmt](https://github.com/ArgosML-tech/warranty-mgmt) |
 | Link Analysis Platform | Graph analysis and investigation | React, Node.js, Express, SQLite | Interactive analytical application | You want to see how staged business data can be consumed in a graph-first analytical UI | [ArgosML-tech/link_analysis](https://github.com/ArgosML-tech/link_analysis) |
@@ -50,6 +53,12 @@ The current collection covers four broad areas:
 1. [Bulk Uploader](docs/projects/bulk-uploader.md)
 2. [LAP-CAP](docs/projects/lap-cap.md)
 3. [CAP PDF Engine](docs/projects/cap-pdf-engine.md)
+
+### For CAP Tooling and Acceleration
+
+1. [CAP Development Accelerator](docs/projects/cap-acc.md)
+2. [Bulk Uploader](docs/projects/bulk-uploader.md)
+3. [Warranty Management](docs/projects/warranty-mgmt.md)
 
 ### For SAP Standard Extensibility
 
@@ -75,6 +84,7 @@ The current collection covers four broad areas:
   - [CAP-EXC](docs/projects/cap-exc.md)
   - [CAP-MIL](docs/projects/cap-mil.md)
   - [CAP PDF Engine](docs/projects/cap-pdf-engine.md)
+  - [CAP Development Accelerator](docs/projects/cap-acc.md)
   - [LAP-CAP](docs/projects/lap-cap.md)
   - [Warranty Management](docs/projects/warranty-mgmt.md)
   - [Link Analysis Platform](docs/projects/link-analysis-platform.md)
@@ -92,6 +102,7 @@ Across the repositories, several patterns appear repeatedly:
 - Fiori Elements as a transactional enterprise UI layer
 - mocked or staged integration with SAP core services
 - standard-object extension and data mashup
+- reusable generators, starters, and support packages
 - automated validation through integration tests
 - separation between source systems, integration boundaries, and downstream consumers
 

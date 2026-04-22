@@ -4,18 +4,19 @@ This collection is best understood not only by project, but also by recurring pa
 
 ## Pattern Matrix
 
-| Pattern | BER App | Bulk Uploader | CAP-EXC | CAP-MIL | CAP PDF Engine | LAP-CAP | Warranty Management | Link Analysis Platform |
-|---|---|---|---|---|---|---|---|---|
-| CDS domain model | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Partial |
-| Draft support | Yes | Yes | Yes | Yes | Yes | Partial | Yes | No |
-| Explicit workflow state machine | Yes | No | Yes | Yes | No | Partial | Partial | No |
-| Role-based authorization | Yes | Partial | Yes | Yes | Yes | Yes | Yes | Yes |
-| Audit trail or event log | Partial | Partial | Yes | Yes | No | Partial | Partial | Yes |
-| External service or mock integration | Yes | Yes | No | No | No | Yes | Yes | Yes |
-| Reusable side-by-side service | No | Yes | No | No | Yes | Yes | No | No |
-| Fiori Elements UI | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No |
-| Standard-object extension or mashup | No | No | No | No | No | No | Yes | No |
-| Downstream analytical consumption | No | No | No | No | No | Yes | No | Yes |
+| Pattern | BER App | Bulk Uploader | CAP-EXC | CAP-MIL | CAP PDF Engine | CAP Development Accelerator | LAP-CAP | Warranty Management | Link Analysis Platform |
+|---|---|---|---|---|---|---|---|---|---|
+| CDS domain model | Yes | Yes | Yes | Yes | Yes | Partial | Yes | Yes | Partial |
+| Draft support | Yes | Yes | Yes | Yes | Yes | Yes | Partial | Yes | No |
+| Explicit workflow state machine | Yes | No | Yes | Yes | No | Partial | Partial | Partial | No |
+| Role-based authorization | Yes | Partial | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Audit trail or event log | Partial | Partial | Yes | Yes | No | Yes | Partial | Partial | Yes |
+| External service or mock integration | Yes | Yes | No | No | No | No | Yes | Yes | Yes |
+| Reusable side-by-side service | No | Yes | No | No | Yes | No | Yes | No | No |
+| Fiori Elements UI | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | No |
+| Standard-object extension or mashup | No | No | No | No | No | No | No | Yes | No |
+| Tooling, starters, or generators | No | No | No | No | No | Yes | No | No | No |
+| Downstream analytical consumption | No | No | No | No | No | No | Yes | No | Yes |
 
 ## CDS Domain Modeling
 
@@ -88,6 +89,14 @@ Not every repository is a business app. Some are technical capabilities intended
 - `bulk-uploader`
 - `cap-pdf-engine`
 - `lap-cap`
+
+## Tooling, Starters, and Generators
+
+The collection also includes the pattern where recurring CAP project structures are captured as developer tooling rather than repeated manually in each solution.
+
+This is most visible in:
+
+- `cap-acc`
 
 ## Downstream Analytical Consumption
 

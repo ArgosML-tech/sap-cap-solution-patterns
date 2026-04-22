@@ -9,6 +9,7 @@ The collection is not intended to represent a single product line. Instead, it g
 - standard SAP extensibility and mashup scenarios
 - integration boundaries between SAP source systems and downstream consumers
 - reusable platform services
+- developer tooling and accelerators for CAP delivery
 - analytical applications that consume staged or transformed business data
 
 The repositories in this collection are useful as reference implementations, MVPs, and pattern explorations rather than as drop-in production products.
@@ -42,6 +43,12 @@ Cross-domain building blocks that can be consumed by other systems or apps.
 
 - `cap-pdf-engine`
 
+### CAP Tooling and Accelerators
+
+Tools that package recurring CAP patterns into starters, generators, and support libraries so that new projects can begin from a stronger baseline.
+
+- `cap-acc`
+
 ### Analytical Applications
 
 Applications focused on investigation, graph exploration, risk analysis, and interpretation of staged data.
@@ -56,6 +63,7 @@ Taken together, the repositories show that SAP CAP can support more than CRUD-ba
 - exposing side-by-side services
 - extending standard SAP objects through imported services and local enrichments
 - handling document generation
+- standardizing CAP project bootstrap and extension workflows
 - sanitizing inbound data before it reaches core systems
 - staging data for downstream analytical applications
 

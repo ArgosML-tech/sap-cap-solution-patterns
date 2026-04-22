@@ -9,6 +9,7 @@
 | CAP-EXC | Operational governance | SAP CAP, Fiori Elements | Exception regularization workflow | Strong auditability | Governance-heavy workflow design |
 | CAP-MIL | Procurement operations | SAP CAP, Fiori Elements | Urgent procurement lifecycle | Rich end-to-end flow | Longer operational lifecycle handling |
 | CAP PDF Engine | Document services | SAP CAP, docxtemplater | Side-by-side rendering service | Reusable cross-domain capability | Reusable technical services |
+| CAP Development Accelerator | CAP developer productivity | Node.js, TypeScript, npm workspaces, SAP CAP | Starters and generators for recurring CAP patterns | Turns repeated project setup into reusable tooling | CAP tooling and accelerators |
 | LAP-CAP | Extraction and handoff | SAP CAP, Fiori Elements | Extract-transform-stage pattern | Clear integration boundary | System boundary and handoff design |
 | Warranty Management | SAP standard extension | SAP CAP, Fiori Elements, imported OData services | Side-by-side standard-object extension | Strong data mashup and draft flow | Standard SAP extensibility patterns |
 | Link Analysis Platform | Investigation and analytics | React, Node.js, Express | Graph-driven analysis workspace | Rich analytical consumption layer | Downstream analytical UI |
@@ -34,6 +35,10 @@
 
 - [CAP PDF Engine](projects/cap-pdf-engine.md)
 
+### CAP Tooling and Accelerators
+
+- [CAP Development Accelerator](projects/cap-acc.md)
+
 ### Downstream Consumption and Analytics
 
 - [Link Analysis Platform](projects/link-analysis-platform.md)
@@ -57,6 +62,12 @@ If the focus is extending standard SAP objects and imported services:
 - start with `warranty-mgmt`
 - continue with `ber-app`
 - then compare with `bulk-uploader`
+
+If the focus is accelerating how CAP projects are bootstrapped and standardized:
+
+- start with `cap-acc`
+- then compare its generated patterns with `bulk-uploader`
+- and review `warranty-mgmt` as a richer target style
 
 If the focus is analytics and downstream use of extracted data:
 
@@ -83,6 +94,10 @@ If the focus is analytics and downstream use of extracted data:
 ### Reusable Technical Services
 
 - `cap-pdf-engine` proves a side-by-side template-rendering service that other systems can consume without embedding domain-specific document logic.
+
+### CAP Tooling and Accelerators
+
+- `cap-acc` proves that CAP project patterns such as starters, draft entities, mocked auth, action tests, audit trails, and comments can be packaged into reusable tooling rather than rebuilt manually in each repository.
 
 ### Downstream Consumption
 
